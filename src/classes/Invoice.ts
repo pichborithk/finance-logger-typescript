@@ -1,8 +1,10 @@
+import { hasFormatter } from '../interfaces/hasFormatter.js';
+
 // export class Invoice {
 
 //   constructor(
 //     readonly client: string,
-//     private details: string,
+//     private detail s: string,
 //     public amount: number
 //   ) {}
 
@@ -11,7 +13,7 @@
 //   }
 // }
 
-export class Invoice {
+export class Invoice implements hasFormatter {
   readonly client: string;
   private details: string;
   public amount: number;
